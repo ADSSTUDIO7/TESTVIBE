@@ -353,8 +353,8 @@ body {
   }
 
   .hero-content h1 {
-    font-size: 28px;
-    margin: 10px 0;
+    font-size: 32px;
+    margin: 20px 0;
   }
 
   .hero-content .btn {
@@ -366,7 +366,7 @@ body {
   
   #background-video {
     width: 60% !important;
-    height: auto !important;
+    height: 60% !important;
     position: static !important;
     clip-path: none !important;
   }
