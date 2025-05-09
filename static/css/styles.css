@@ -319,93 +319,100 @@ body {
     border-radius: 50%;
 }
 
-/* Адаптивность для мобильных экранов */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 @media (max-width: 768px) {
-    /* Меню в колонку */
-    .navbar .container {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-top: 10px;
-    }
+  /* Меню навигации */
+  .navbar .container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .nav-links li {
-        margin-left: 0;
-    }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
 
-    .nav-links li a {
-        font-size: 20px;
-    }
+  .nav-links li {
+    margin-left: 0;
+  }
 
-    /* Hero: текст и кнопки адаптированы */
-    .hero-content p {
-        font-size: 18px;
-        top: 80px;
-        right: 20px;
-        text-align: center;
-    }
+  .nav-links li a {
+    font-size: 20px;
+  }
 
-    .hero-content h1 {
-        font-size: 36px;
-        top: 200px;
-        right: 20px;
-        text-align: center;
-    }
+  /* Hero секция */
+  .hero-content p {
+    font-size: 16px;
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
 
-    .hero-content .btn {
-        font-size: 16px;
-        padding: 10px 25px;
-        top: 300px;
-        right: 50%;
-        transform: translate(50%, -50%);
-    }
+  .hero-content h1 {
+    font-size: 32px;
+    position: static;
+    text-align: center;
+    margin: 20px 0;
+  }
 
-    /* Видео и фон в hero */
-    #background-video {
-        width: 100%;
-        height: auto;
-        left: 0;
-        clip-path: none;
-    }
+  .hero-content .btn {
+    font-size: 16px;
+    padding: 10px 25px;
+    position: static;
+    display: inline-block;
+    margin: 20px auto;
+  }
 
-    .hero::before {
-        display: none;
-    }
+  #background-video {
+    position: static;
+    width: 100%;
+    height: auto;
+    clip-path: none;
+  }
 
-    /* Контейнер контактов в столбик */
-    .contact-container {
-        flex-direction: column;
-        text-align: center;
-    }
+  .hero::before {
+    display: none;
+  }
 
-    .contact-info {
-        max-width: 100%;
-    }
+  /* Секция вариантов */
+  .variant-btn {
+    width: 100%;
+  }
 
-    /* Картинки */
-    .contact-image img,
-    .social-icons img {
-        max-width: 100%;
-        height: auto;
-    }
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
 
-    /* Цены */
-    .prices-container {
-        gap: 20px;
-        margin-top: 50px;
-    }
+  /* Цены */
+  .prices-container {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .price-item {
-        min-width: 80%;
-    }
+  .price-item {
+    min-width: 80%;
+  }
 
-    /* Варианты */
-    .variant-btn {
-        width: 100%;
-    }
+  /* Контакты */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info {
+    max-width: 100%;
+  }
+
+  .contact-image img {
+    width: 100%;
+    height: auto;
+  }
 }
