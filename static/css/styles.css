@@ -319,14 +319,9 @@ body {
     border-radius: 50%;
 }
 
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 @media (max-width: 768px) {
 
-  /* Меню навигации */
+  
   .navbar .container {
     flex-direction: column;
     align-items: center;
@@ -336,83 +331,80 @@ img, video {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-top: 10px;
+    padding: 0;
   }
 
   .nav-links li {
-    margin-left: 0;
-  }
-
-  .nav-links li a {
-    font-size: 20px;
+    margin: 5px 0;
   }
 
   /* Hero секция */
+  .hero-content p,
+  .hero-content h1,
+  .hero-content .btn {
+    position: static !important;
+    text-align: center;
+    transform: none;
+  }
+
   .hero-content p {
     font-size: 16px;
-    position: static;
-    text-align: center;
-    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .hero-content h1 {
-    font-size: 32px;
-    position: static;
-    text-align: center;
-    margin: 20px 0;
+    font-size: 28px;
+    margin: 10px 0;
   }
 
   .hero-content .btn {
     font-size: 16px;
-    padding: 10px 25px;
-    position: static;
-    display: inline-block;
-    margin: 20px auto;
+    padding: 10px 20px;
+    margin: 15px 0;
   }
 
+  
   #background-video {
-    position: static;
-    width: 100%;
-    height: auto;
-    clip-path: none;
+    width: 100% !important;
+    height: auto !important;
+    position: static !important;
+    clip-path: none !important;
   }
 
   .hero::before {
-    display: none;
+    display: none !important;
   }
 
-  /* Секция вариантов */
-  .variant-btn {
-    width: 100%;
-  }
-
-  .col-md-6 {
-    margin-bottom: 20px;
-  }
-
-  /* Цены */
-  .prices-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .price-item {
-    min-width: 80%;
-  }
-
-  /* Контакты */
+  
   .contact-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .contact-info {
-    max-width: 100%;
-  }
-
   .contact-image img {
     width: 100%;
     height: auto;
+  }
+
+  
+  .prices-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .price-item {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  /* Варианты */
+  .variant-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .col-md-6 {
+    margin-bottom: 20px;
   }
 }
